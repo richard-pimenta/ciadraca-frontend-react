@@ -6,6 +6,8 @@ import { SociaisComponents } from "../Components/Media/Sociais/SociaisComponents
 import { AboutComponents } from "../Components/About/AboutComponents";
 import { ContactsComponents } from "../Components/Contacts/ContactsComponents";
 import { ProjectsGalery } from "../Components/Media/Projetos/ProjectsGalery"
+import { CreateProjectsAlbums } from "../Components/Media/Projetos/CreateProjectsAlbums"
+
 export function Routes() {
   return (
     <Switch>
@@ -21,13 +23,16 @@ export function Routes() {
       <Route path="/media/socias">
         <SociaisComponents />
       </Route>
-      <Route path="/projetos/fotos/os-renegados">
-        <ProjectsGalery />
-      </Route>
-      <Route path="/">
+      <Route exact path="/">
         <HomeComponets />
+      </Route>
+      <Route path="/projetos/fotos/criarAlbum">
+        <CreateProjectsAlbums />
+      </Route>
+      <Route path="/projetos/fotos/:album">
+        <ProjectsGalery />
       </Route>
 
     </Switch>
-  );
+  )
 }

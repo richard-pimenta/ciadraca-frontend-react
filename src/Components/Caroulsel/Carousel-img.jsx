@@ -1,11 +1,11 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel'
-// import { Container } from './styles';
+import './carousel.css'
 
 export function CarouseImg() {
   return (
-    <div className="container col-md- configdiv" >
-      <Carousel variant="dark" autoPlay={true} pause="hover" >
+    <div className="container col-md-6" >
+      <Carousel variant="dark" autoPlay={true} pause="hover" className="carousel">
         <Carousel.Item interval={10000}>
           <img
             className="d-block w-100"

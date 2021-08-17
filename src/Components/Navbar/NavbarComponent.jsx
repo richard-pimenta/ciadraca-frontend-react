@@ -7,7 +7,7 @@ import {
   Form,
   Button,
 } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { ReactComponent as Theater } from "../../svgs/theater_comedy.svg";
 import { Routes } from "../../Routes/Routes";
 // import { Container } from './styles';
@@ -20,11 +20,11 @@ function NavbarComponent() {
           <Container>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Navbar.Brand as={Link} to={"/home"}>
+              <Navbar.Brand as={Link} to={"/"}>
                 <Theater />
               </Navbar.Brand>
               <Nav className="me-auto">
-                <Nav.Link as={Link} to={"/home"}>
+                <Nav.Link as={Link} to={"/"}>
                   Home
                 </Nav.Link>
                 <Nav.Link as={Link} to={"/about"}>
@@ -44,7 +44,7 @@ function NavbarComponent() {
                 </Nav.Link>
               </Nav>
               <NavDropdown title="Login" id="basic-nav-dropdown">
-                <Form className="d-flex">
+                <Form className="mb-3">
                   <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="email" placeholder="Enter email" />
                   </Form.Group>

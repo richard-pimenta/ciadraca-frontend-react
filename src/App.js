@@ -1,6 +1,5 @@
-// import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { BrowserRouter, Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import  NavbarComponent  from "./Components/Navbar/NavbarComponent";
 
 function App() {
