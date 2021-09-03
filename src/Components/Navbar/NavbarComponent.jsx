@@ -35,8 +35,8 @@ function NavbarComponent() {
                   Projetos
                 </Nav.Link>
 
-                <Nav.Link as={Link} to={"/media/socias"}>
-                  Medias Socias
+                <Nav.Link as={Link} to={"/midia/socias"}>
+                Mídias Sociais
                 </Nav.Link>
 
                 <Nav.Link as={Link} to={"/contacts"}>

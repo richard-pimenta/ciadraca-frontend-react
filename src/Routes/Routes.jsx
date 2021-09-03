@@ -20,7 +20,7 @@ export function Routes() {
       <Route exact path="/projetos">
         <ProjectsComponents />
       </Route>
-      <Route path="/media/socias">
+      <Route path="/midia/socias">
         <SociaisComponents />
       </Route>
       <Route exact path="/">
